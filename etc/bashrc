@@ -1,0 +1,21 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+
+# timestamp function for backing up files
+alias timestamp='date +%F-%H%M'
+
+# shortcut the dirs stack management
+alias pu='pushd'
+alias po='popd'
+
+# Some shortcuts for different directory listings
+alias ls='ls -hF --color=tty'                 # classify files in colour
+alias ll='ls -l'                              # long list
+alias la='ls -A'                              # all but . and ..
+alias l='ls -CF'                              #

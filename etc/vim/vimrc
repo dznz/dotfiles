@@ -1,0 +1,32 @@
+" http://github.com/twerth/dotfiles/blob/master/etc/vim/vimrc used for ideas
+
+" Colors **********************************************************************
+set background=dark 
+syntax on " syntax highlighting
+colorscheme ir_black
+
+" -----------------------------------------------------------------------------  
+" |                             OS Specific                                   |
+" |                      (GUI stuff goes in gvimrc)                           |
+" -----------------------------------------------------------------------------  
+
+" Mac *************************************************************************
+"if has("mac") 
+  "" 
+"endif
+ 
+" Windows *********************************************************************
+"if has("gui_win32")
+  "" 
+"endif
+
+" -----------------------------------------------------------------------------  
+" |                               Host specific                               |
+" -----------------------------------------------------------------------------  
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
+
+"if hostname() == "foo"
+  " do something
+"endif

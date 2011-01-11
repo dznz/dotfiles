@@ -1,0 +1,4 @@
+caption always
+caption string "%w : %C"
+escape ^bb
+defscrollback 2048

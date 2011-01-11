@@ -1,0 +1,35 @@
+*SaveLines: 10000
+! Rxvt*loginShell: True
+
+*font: Monaco-18
+*boldFont: Monaco-18
+# Alternative fonts
+#*font: Inconsolata Medium-18
+#*font: Lucida Console-12
+#*font: Consolas Regular-16
+
+# Colours are the InfiniteRed theme
+*foreground: #f2f2f2
+*background: #101010
+*color0:    #6c6c6c
+*color1:    #e9897c
+*color2:    #b6e77d
+*color3:    #ecebbe
+*color4:    #a9cdeb
+*color5:    #ea96eb
+*color6:    #c9caec
+*color7:    #f2f2f2
+*color8:    #747474
+*color9:    #f99286
+*color10:    #c3f786
+*color11:    #fcfbcc
+*color12:    #b6defb
+*color13:    #fba1fb
+*color14:    #d7d9fc
+*color15:    #e2e2e2
+
+# rxvt doesn't like the *format, so repeat settings here
+rxvt*font: Monaco-18
+rxvt*boldFont: Monaco-18
+rxvt*foreground: #f2f2f2
+rxvt*background: #101010
