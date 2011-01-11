@@ -1,0 +1,9 @@
+= Daniel Zollinger's Dotfiles
+
+My *nix dotfiles, with settings for vim, screen, bash etc
+
+== Installation
+
+  git clone git://github.com/dznz/dotfiles ~/.dotfiles
+  ln -s ~/.dotfiles/etc/screenrc ~/.screenrc
+  ...
