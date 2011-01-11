@@ -19,3 +19,11 @@ alias ls='ls -hF --color=tty'                 # classify files in colour
 alias ll='ls -l'                              # long list
 alias la='ls -A'                              # all but . and ..
 alias l='ls -CF'                              #
+
+# shorthand rails project creation
+function railsapp {
+    template=$1
+    appname=$2
+    shift 2
+    rails $appname -m http://github.com/dznz/rails-templates/raw/master/$template.rb $@
+}
