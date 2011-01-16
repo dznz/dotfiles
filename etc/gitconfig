@@ -1,0 +1,6 @@
+[user]
+	name = dznz
+	email = daniel.zollinger@gmail.com
+[alias]
+	st = status
+	ci = commit
