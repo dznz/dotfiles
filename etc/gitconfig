@@ -1,10 +1,25 @@
 [user]
 	name = dznz
-	email = daniel.zollinger@gmail.com
+	email = krdmgwngb8@snkmail.com
 [alias]
 	st = status
 	ci = commit
+	cia = commit --amend
 	br = branch
 	co = checkout
 	df = diff
-	lg = log -p
+	cp = cherry-pick
+	rb = rebase
+# lg = log -p
+  # From https://gist.github.com/492227
+  wip = !"git add -A; git ls-files --deleted -z | xargs -0 git rm; git commit -m \"wip\""
+  unwip = !"git log -n 1 | grep -q -c wip && git reset HEAD~1"
+  # From http://superuser.com/questions/169695/what-are-your-favorite-git-aliases
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+	# git panic   :when you're worried the world is coming to an end
+	panic = !tar cvf ../git_panic.tar .
+	amend = commit --amend -C HEAD
+[core]
+	editor = mate -w
+[color]
+  ui = auto
